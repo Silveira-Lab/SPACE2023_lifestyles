@@ -26,7 +26,8 @@ Viral contigs were quality controlled using CheckV's end_to_end pipeline. The qu
 The following methods were used to identify prophages or temperate viruses using the vOTU representative sequences. The results of these analysis were aggregated into a single tsv file.
 1. VIBRANT - lytic/lysogenic
 2. Hallmark functions - temperate/lytic
-   Identified via the pressence of functions as identified by MetaCerberus: integrase, recombinase, transposase, excisionase, CI/Cro, Phage repressor, and ParAB.
+
+Identified via the pressence of functions as identified by MetaCerberus: integrase, recombinase, transposase, excisionase, CI/Cro, Phage repressor, and ParAB.
 3. BLASTn search of phages against MAGs
 4. CheckV prophage identification
 5. Genomad prophage identification
