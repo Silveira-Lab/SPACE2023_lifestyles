@@ -24,11 +24,11 @@ Viral contigs were quality controlled using CheckV's end_to_end pipeline. The qu
  Viral representative sequences were annotated using [MetaCerberus](https://github.com/raw-lab/MetaCerberus) (v1.2.1). All of the models were used for annotation and the *--meta* and *--scaffolds* options were invoked.
 ## Viral lifestyle identificaiton
 The following methods were used to identify prophages or temperate viruses using the vOTU representative sequences. The results of these analysis were aggregated into a single tsv file.
-1. VIBRANT - lytic/lysogenic
-2. Hallmark functions - temperate/lytic
+1. VIBRANT - lysogenic
+2. Hallmark functions - lysogenic
+3. BLASTn search of phages against MAGs - prophage
+4. CheckV prophage identification - prophage
+5. Genomad prophage identification - prophage
 
-Identified via the pressence of functions as identified by MetaCerberus: integrase, recombinase, transposase, excisionase, CI/Cro, Phage repressor, and ParAB.
-3. BLASTn search of phages against MAGs
-4. CheckV prophage identification
-5. Genomad prophage identification
+Functional hallmarkes were identified by search MetaCerberus results for: integrase, recombinase, transposase, excisionase, CI/Cro, Phage repressor, and ParAB.
 
