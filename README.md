@@ -21,7 +21,7 @@ Viral contigs were quality controlled using CheckV's end_to_end pipeline. The qu
 2. was medium-high quality, had >= 1 viral gene, and < 50% contamination
 3. had >= 1 viral gene, had no host genes, and was < 50% contamination
 
- Viral representative sequences were annotated using [MetaCerberus](https://github.com/raw-lab/MetaCerberus) (v1.2.1). All of the models were used for annotation and the *--meta* and *--scaffolds* options were invoked.
+ Viral representative sequences were annotated using [MetaCerberus](https://github.com/raw-lab/MetaCerberus) (v1.2.1). All of the models were used for annotation and the *--meta* option was invoked.
 ## Viral lifestyle identificaiton
 The following methods were used to identify prophages or temperate viruses using the vOTU representative sequences. The results of these analysis were aggregated into a single tsv file.
 1. VIBRANT - lysogenic
