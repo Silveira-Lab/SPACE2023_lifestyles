@@ -43,7 +43,7 @@ The following methode were used to identify virus host pairs which were aggregat
 
 Hi-C MAGs were not dereplicated or processed beyond CheckM2 qualtiy control cutoffs prior to predicting viral contigs.
 
-MAGs were added to a custom iPhop database containing the typical iPhop database with our MAGs. In order to accomplish this, we first removed any contig that contained a viral sequence from the MAGs. We ran [GTDB-tk](https://github.com/Ecogenomics/GTDBTk) (v2.4.1) on all of the MAGs (prior to dereplication and wihtout viral contigs) per iPhop documentation. We added the entire set to the iPhop database. We included all MAGs in an attempt to include as much microdiversity as possible in the set of host genomes.
+MAGs were added to a custom iPhop database containing the typical iPhop database with our MAGs, per iPhop's documentation. Briefly, we removed any contig that contained a viral sequence from the MAGs, we ran [GTDB-tk](https://github.com/Ecogenomics/GTDBTk) (v2.4.1), and added the MAGs to the iPhop database. We included all MAGs (without dereplication) in an attempt to include as much microdiversity as possible in the set of host genomes.
 
 The BLASTn identification of hosts was done in the same manner as stated in the prophage identifcaiton step.
 
