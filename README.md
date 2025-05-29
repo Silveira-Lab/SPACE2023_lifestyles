@@ -37,13 +37,13 @@ BLASTn searches were done by performing a BLASTn search of the vOTU representati
 ## Virus-Host Prediction
 The following methode were used to identify virus host pairs which were aggregated into a single tsv file.
 1. Hi-C bins - contacts combined with viral prediction using Genomad
-2. iPhop - *in silico* virus host matching
+2. [iPhop](https://bitbucket.org/srouxjgi/iphop/src/main/) (v1.3.3) - *in silico* virus host matching
 3. BLASTn of phages against MAGs
 4. CRISPR spacer matches from spacers found in MAGs 
 
 Hi-C MAGs were not dereplicated or processed beyond CheckM2 qualtiy control cutoffs prior to predicting viral contigs.
 
-MAGs were added to a custom iPhop database containing the typical iPhop database with our MAGs. In order to accomplish this, we first removed any contig that contained a viral sequence from the MAGs. We ran GTDB-tk on all of the MAGs (prior to dereplication and wihtout viral contigs) per iPhop documentation. We added the entire set to the iPhop database. We included all MAGs in an attempt to include as much microdiversity as possible in the set of host genomes.
+MAGs were added to a custom iPhop database containing the typical iPhop database with our MAGs. In order to accomplish this, we first removed any contig that contained a viral sequence from the MAGs. We ran [GTDB-tk](https://github.com/Ecogenomics/GTDBTk) (v2.4.1) on all of the MAGs (prior to dereplication and wihtout viral contigs) per iPhop documentation. We added the entire set to the iPhop database. We included all MAGs in an attempt to include as much microdiversity as possible in the set of host genomes.
 
 The BLASTn identification of hosts was done in the same manner as stated in the prophage identifcaiton step.
 
