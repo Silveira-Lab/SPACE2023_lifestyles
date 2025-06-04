@@ -17,7 +17,7 @@ Viral contigs were predicted using [Genomad](https://github.com/apcamargo/genoma
 
 Viruses larger than 2,500 bp were clustered into vOTUs at 95% ANI and 85% coverage using the helper scripts and examples provided by [CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) (v1.0.3).
 
-Viral contigs were quality controlled using CheckV's end_to_end pipeline. The quality_sumary.tsv was then used to choose contigs that met the following criteria: 
+Viral contigs were quality controlled using CheckV's end_to_end pipeline. The quality_summary.tsv output by CheckV was then used to choose contigs that met the following criteria: 
 1. had >= 1 viral gene and was >= 10 kbp
 2. was medium or high quality, had >= 1 viral gene, and < 50% contamination
 3. had >= 1 viral gene, had no host genes, and was < 50% contamination
