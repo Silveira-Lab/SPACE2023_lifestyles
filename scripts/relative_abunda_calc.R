@@ -1,10 +1,11 @@
+library(here)
 library(dplyr)
 library(tidyr)
 library(stringi)
 library(compositions)
 
 
-setwd("/Users/jordanwalker/Library/CloudStorage/OneDrive-UniversityofMiami/Research/SPACE_2023/viruses/input_data/")
+setwd(here())
 omics <- read.delim("/Users/jordanwalker/Library/CloudStorage/OneDrive-UniversityofMiami/Research/SPACE_2023/omics_read_counts.tsv")
 c2b <- read.delim("hosts/contigs2bins.tsv", col.names = c("bin", "Contig"))
 
